@@ -16,7 +16,8 @@ a:hover {
     border-color: #44D62D;
 }
 
-.btn:hover, .btn-primary:hover {
+.btn:hover,
+.btn-primary:hover {
     background-color: #44ad34;
     border-color: #44ad34;
 }
@@ -25,8 +26,20 @@ a:hover {
     width: 400px;
 }
 
-.form-login-register .submit button{
+.form-login-register a {
+    font-size: 14px;
+}
+
+.form-login-register .register button {
     margin-top: 45px;
+    margin-bottom: 35px;
+    border-radius: 25px;
+    font-size: 14px;
+    height: 48px;
+}
+
+.form-login-register .login button {
+    margin-top: 20px;
     margin-bottom: 35px;
     border-radius: 25px;
     font-size: 14px;

@@ -5,11 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="./assets/font/metropolis.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-
+    <div class="vh-100 d-flex justify-content-center align-items-center">
+        <div class="form-login-register">
+            <div class="text-center header">
+                <img src="./assets/img/icon/logo.svg" alt="">
+                <p class="font-weight-bold">Please login with your account</p>
+            </div>
+            <div class="text-center">
+                <div class="btn-group switch">
+                    <button type="button" class="btn border">Customer</button>
+                    <button type="button" class="btn border">Seller</button>
+                </div>
+            </div>
+            <div class="w-auto m-2">
+                <form action="home.html">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="text-right">
+                        <a href="#forgot">Forgot Password?</a>
+                    </div>
+                    <div class="login">
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    </div>
+                </form>
+            </div>
+            <div class="text-center footer">
+                <p>Don't have a Wakede account? <a href="register.html">Register</a></p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
