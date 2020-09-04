@@ -5,36 +5,581 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="./assets/font/metropolis.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <div class="vh-100">
-        <nav class="navbar navbar-light"
-            style="box-shadow: 0px 6px 40px rgba(173, 173, 173, 0.25);padding-left: 150px;padding-right: 150px;height: 90px;">
+        <nav class="navbar navbar-light">
             <div class="form-inline">
                 <a class="navbar-brand" href="home.html">
                     <img src="./assets/img/icon/logo.svg" alt="">
                 </a>
                 <div class="search-bar">
-                    <form class="form-inline">
-                        <input class="form-control mr-2" type="search" placeholder="Search"
-                            style="border-radius: 23px;margin-left: 60px; width: 507px; padding-left: 20px;background: url(/assets/img/icon/search.svg) no-repeat;background-position: 97% 50%;">
-                        <button class="btn border rounded-pill" type="submit"><img src="./assets/img/icon/filter.svg"
+                    <form>
+                        <input class="form-control mr-2" type="search" placeholder="Search">
+                        <button class="btn border" type="submit"><img src="./assets/img/icon/filter.svg"
                                 alt=""></button>
                     </form>
                 </div>
             </div>
-            <div>
+            <div class="nav-end">
                 <a href="detail.html" style="margin-right: 35px;"><img src="./assets/img/icon/cart.svg" alt=""></a>
-                <a href="login.html" style="margin-right: 15px;"><button class="btn btn-primary rounded-pill"
-                        style="font-size: 14px;background-color: #44D62D;border-color: #44D62D;">Login</button></a>
-                <a href="register.html"><button class="btn border rounded-pill"
-                        style="font-size: 14px; color:#9B9B9B;">Sign Up</button></a>
+                <a href="login.html" style="margin-right: 15px;"><button class="btn btn-primary">Login</button></a>
+                <a href="register.html"><button class="btn border">Sign Up</button></a>
             </div>
         </nav>
 
+        <div class="content">
+            <div>
 
+            </div>
+            <div class="container-fluid">
+                <h2>Category</h2>
+                <h6 class="subcontent">
+                    <small class="text-muted">What are you currently looking for</small>
+                </h6>
+                
+            </div>
+            <div class="container-fluid">
+                <h2>New</h2>
+                <h6 class="subcontent">
+                    <small class="text-muted">You've never seen it before!</small>
+                </h6>
+                <div class="row row-cols-1 row-cols-md-5">
+                    <div class="col mb-4">
+                        <div class="card item">
+                            <img src="./assets/img/item/item.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="detail.html">
+                                    <h6 class="card-title">Men's formal suit - Black & White</h6>
+                                </a>
+                                <h6 class="card-text">$ 40.0</h6>
+                                <h6>
+                                    <small class="text-muted">Zalora Cloth</small>
+                                </h6>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item">
+                                        <h6>
+                                            <small class="text-muted">(10)</small>
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card item">
+                            <img src="./assets/img/item/item.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="detail.html">
+                                    <h6 class="card-title">Men's formal suit - Black & White</h6>
+                                </a>
+                                <h6 class="card-text">$ 40.0</h6>
+                                <h6>
+                                    <small class="text-muted">Zalora Cloth</small>
+                                </h6>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item">
+                                        <h6>
+                                            <small class="text-muted">(10)</small>
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card item">
+                            <img src="./assets/img/item/item.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="detail.html">
+                                    <h6 class="card-title">Men's formal suit - Black & White</h6>
+                                </a>
+                                <h6 class="card-text">$ 40.0</h6>
+                                <h6>
+                                    <small class="text-muted">Zalora Cloth</small>
+                                </h6>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item">
+                                        <h6>
+                                            <small class="text-muted">(10)</small>
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card item">
+                            <img src="./assets/img/item/item.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="detail.html">
+                                    <h6 class="card-title">Men's formal suit - Black & White</h6>
+                                </a>
+                                <h6 class="card-text">$ 40.0</h6>
+                                <h6>
+                                    <small class="text-muted">Zalora Cloth</small>
+                                </h6>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item">
+                                        <h6>
+                                            <small class="text-muted">(10)</small>
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card item">
+                            <img src="./assets/img/item/item.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="detail.html">
+                                    <h6 class="card-title">Men's formal suit - Black & White</h6>
+                                </a>
+                                <h6 class="card-text">$ 40.0</h6>
+                                <h6>
+                                    <small class="text-muted">Zalora Cloth</small>
+                                </h6>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item">
+                                        <h6>
+                                            <small class="text-muted">(10)</small>
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card item">
+                            <img src="./assets/img/item/item.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="detail.html">
+                                    <h6 class="card-title">Men's formal suit - Black & White</h6>
+                                </a>
+                                <h6 class="card-text">$ 40.0</h6>
+                                <h6>
+                                    <small class="text-muted">Zalora Cloth</small>
+                                </h6>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item">
+                                        <h6>
+                                            <small class="text-muted">(10)</small>
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card item">
+                            <img src="./assets/img/item/item.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="detail.html">
+                                    <h6 class="card-title">Men's formal suit - Black & White</h6>
+                                </a>
+                                <h6 class="card-text">$ 40.0</h6>
+                                <h6>
+                                    <small class="text-muted">Zalora Cloth</small>
+                                </h6>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item">
+                                        <h6>
+                                            <small class="text-muted">(10)</small>
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card item">
+                            <img src="./assets/img/item/item.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="detail.html">
+                                    <h6 class="card-title">Men's formal suit - Black & White</h6>
+                                </a>
+                                <h6 class="card-text">$ 40.0</h6>
+                                <h6>
+                                    <small class="text-muted">Zalora Cloth</small>
+                                </h6>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item">
+                                        <h6>
+                                            <small class="text-muted">(10)</small>
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card item">
+                            <img src="./assets/img/item/item.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="detail.html">
+                                    <h6 class="card-title">Men's formal suit - Black & White</h6>
+                                </a>
+                                <h6 class="card-text">$ 40.0</h6>
+                                <h6>
+                                    <small class="text-muted">Zalora Cloth</small>
+                                </h6>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item">
+                                        <h6>
+                                            <small class="text-muted">(10)</small>
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card item">
+                            <img src="./assets/img/item/item.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="detail.html">
+                                    <h6 class="card-title">Men's formal suit - Black & White</h6>
+                                </a>
+                                <h6 class="card-text">$ 40.0</h6>
+                                <h6>
+                                    <small class="text-muted">Zalora Cloth</small>
+                                </h6>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item">
+                                        <h6>
+                                            <small class="text-muted">(10)</small>
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <h2>Popular</h2>
+                <h6 class="subcontent">
+                    <small class="text-muted">Find clothes that are trending recently</small>
+                </h6>
+                <div class="row row-cols-1 row-cols-md-5">
+                    <div class="col mb-4">
+                        <div class="card item">
+                            <img src="./assets/img/item/item.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="detail.html">
+                                    <h6 class="card-title">Men's formal suit - Black & White</h6>
+                                </a>
+                                <h6 class="card-text">$ 40.0</h6>
+                                <h6>
+                                    <small class="text-muted">Zalora Cloth</small>
+                                </h6>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item">
+                                        <h6>
+                                            <small class="text-muted">(10)</small>
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card item">
+                            <img src="./assets/img/item/item.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="detail.html">
+                                    <h6 class="card-title">Men's formal suit - Black & White</h6>
+                                </a>
+                                <h6 class="card-text">$ 40.0</h6>
+                                <h6>
+                                    <small class="text-muted">Zalora Cloth</small>
+                                </h6>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item">
+                                        <h6>
+                                            <small class="text-muted">(10)</small>
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card item">
+                            <img src="./assets/img/item/item.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="detail.html">
+                                    <h6 class="card-title">Men's formal suit - Black & White</h6>
+                                </a>
+                                <h6 class="card-text">$ 40.0</h6>
+                                <h6>
+                                    <small class="text-muted">Zalora Cloth</small>
+                                </h6>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item">
+                                        <h6>
+                                            <small class="text-muted">(10)</small>
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card item">
+                            <img src="./assets/img/item/item.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="detail.html">
+                                    <h6 class="card-title">Men's formal suit - Black & White</h6>
+                                </a>
+                                <h6 class="card-text">$ 40.0</h6>
+                                <h6>
+                                    <small class="text-muted">Zalora Cloth</small>
+                                </h6>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item">
+                                        <h6>
+                                            <small class="text-muted">(10)</small>
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card item">
+                            <img src="./assets/img/item/item.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="detail.html">
+                                    <h6 class="card-title">Men's formal suit - Black & White</h6>
+                                </a>
+                                <h6 class="card-text">$ 40.0</h6>
+                                <h6>
+                                    <small class="text-muted">Zalora Cloth</small>
+                                </h6>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item">
+                                        <h6>
+                                            <small class="text-muted">(10)</small>
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card item">
+                            <img src="./assets/img/item/item.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="detail.html">
+                                    <h6 class="card-title">Men's formal suit - Black & White</h6>
+                                </a>
+                                <h6 class="card-text">$ 40.0</h6>
+                                <h6>
+                                    <small class="text-muted">Zalora Cloth</small>
+                                </h6>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item">
+                                        <h6>
+                                            <small class="text-muted">(10)</small>
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card item">
+                            <img src="./assets/img/item/item.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="detail.html">
+                                    <h6 class="card-title">Men's formal suit - Black & White</h6>
+                                </a>
+                                <h6 class="card-text">$ 40.0</h6>
+                                <h6>
+                                    <small class="text-muted">Zalora Cloth</small>
+                                </h6>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item">
+                                        <h6>
+                                            <small class="text-muted">(10)</small>
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card item">
+                            <img src="./assets/img/item/item.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="detail.html">
+                                    <h6 class="card-title">Men's formal suit - Black & White</h6>
+                                </a>
+                                <h6 class="card-text">$ 40.0</h6>
+                                <h6>
+                                    <small class="text-muted">Zalora Cloth</small>
+                                </h6>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item">
+                                        <h6>
+                                            <small class="text-muted">(10)</small>
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card item">
+                            <img src="./assets/img/item/item.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="detail.html">
+                                    <h6 class="card-title">Men's formal suit - Black & White</h6>
+                                </a>
+                                <h6 class="card-text">$ 40.0</h6>
+                                <h6>
+                                    <small class="text-muted">Zalora Cloth</small>
+                                </h6>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item">
+                                        <h6>
+                                            <small class="text-muted">(10)</small>
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card item">
+                            <img src="./assets/img/item/item.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="detail.html">
+                                    <h6 class="card-title">Men's formal suit - Black & White</h6>
+                                </a>
+                                <h6 class="card-text">$ 40.0</h6>
+                                <h6>
+                                    <small class="text-muted">Zalora Cloth</small>
+                                </h6>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item"><img src="./assets/img/icon/star.svg" alt=""></li>
+                                    <li class="list-inline-item">
+                                        <h6>
+                                            <small class="text-muted">(10)</small>
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
