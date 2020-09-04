@@ -1,0 +1,63 @@
+body {
+    font-family: Metropolis Regular;
+}
+
+a {
+    color: #44D62D;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #44ad34;
+}
+
+.btn-primary {
+    background-color: #44D62D;
+    border-color: #44D62D;
+}
+
+.btn:hover, .btn-primary:hover {
+    background-color: #44ad34;
+    border-color: #44ad34;
+}
+
+.form-login-register {
+    width: 400px;
+}
+
+.form-login-register .submit button{
+    margin-top: 45px;
+    margin-bottom: 35px;
+    border-radius: 25px;
+    font-size: 14px;
+    height: 48px;
+}
+
+.form-login-register .header img {
+    margin-bottom: 35px;
+}
+
+.form-login-register .header p {
+    margin-bottom: 45px;
+    font-size: 18px;
+}
+
+.form-login-register input {
+    font-size: 14px;
+    height: 48px;
+    padding-left: 23px;
+}
+
+.form-login-register .footer p {
+    font-size: 14px;
+}
+
+.form-login-register .switch {
+    margin-bottom: 35px;
+}
+
+.form-login-register .switch button {
+    font-size: 14px;
+    width: 123px;
+    height: 48px;
+}
