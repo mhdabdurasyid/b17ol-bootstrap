@@ -112,8 +112,8 @@ a:hover {
     margin: 40px 140px;
 }
 
-.content h2,
-.content h3 {
+.content h3,
+.content .container-fluid h2 {
     padding-top: 45px;
 }
 
@@ -181,7 +181,8 @@ hr {
 .content .product-info p,
 .content .d-flex .rating p,
 .content .product-title h6,
-.content .product-price h6  {
+.content .product-price h6,
+.content.cart-checkout .d-flex .card .d-flex .total h6 {
     color: #6c757d;
 }
 
@@ -189,18 +190,19 @@ hr {
     width: 370px;
 }
 
-.content .selectable-img .main-img img{
+.content .selectable-img .main-img img {
     width: 370px;
     height: 370px;
     border-radius: 8px;
 }
 
-.content .d-flex .product-price p{
+.content .d-flex .product-price p {
     font-size: 30px;
 }
 
 .content .product-color .d-flex button,
-.content .size-quantity .d-flex button {
+.content .size-quantity .d-flex button,
+.content .cart-quantity .d-flex button {
     width: 35px;
     height: 35px;
 }
@@ -214,4 +216,33 @@ hr {
 
 .content .product-button .btn.btn-primary {
     width: 340px;
+}
+
+.content.cart-checkout .d-flex .card {
+    box-shadow: 0px 0px 8px rgba(115, 115, 115, 0.25);
+    border-radius: 4px;
+}
+
+.content.cart-checkout .d-flex .card.summary {
+    height: 180px;
+    width: 360px;
+}
+
+.content.cart-checkout .d-flex .card .btn.btn-primary.btn-block {
+    border-radius: 25px;
+    font-size: 14px;
+    height: 36px;
+}
+
+.content.cart-checkout .d-flex .card .d-flex p {
+    font-size: 18px;
+}
+
+.content.cart-checkout .d-flex .card .custom-control .custom-control-label img {
+    width: 65px;
+    height: auto;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #44D62D;
 }
