@@ -6,6 +6,11 @@ a {
     color: #44D62D;
 }
 
+a,
+p {
+    font-size: 14px;
+}
+
 a:hover {
     text-decoration: none;
     color: #44ad34;
@@ -24,10 +29,6 @@ a:hover {
 
 .form-login-register {
     width: 400px;
-}
-
-.form-login-register a {
-    font-size: 14px;
 }
 
 .form-login-register .register button {
@@ -61,10 +62,6 @@ a:hover {
     padding-left: 23px;
 }
 
-.form-login-register .footer p {
-    font-size: 14px;
-}
-
 .form-login-register .switch {
     margin-bottom: 35px;
 }
@@ -73,7 +70,7 @@ a:hover {
     font-size: 14px;
     width: 123px;
     height: 48px;
-    color: #9B9B9B;
+    color: #6c757d;
 }
 
 .navbar-light {
@@ -107,18 +104,21 @@ a:hover {
 }
 
 .navbar-light .nav-end .btn.border {
-    border: 1px solid #9B9B9B;
-    color: #9B9B9B;
+    border: 1px solid #6c757d;
+    color: #6c757d;
 }
 
 .content {
     margin: 40px 140px;
 }
 
-.content h2 {
-    font-weight: bold;
-    margin: 0;
+.content h2,
+.content h3 {
     padding-top: 45px;
+}
+
+.content h3 {
+    padding-bottom: 35px;
 }
 
 .content .subcontent {
@@ -132,15 +132,86 @@ a:hover {
 }
 
 .content .card.item .card-title {
-    font-weight: bold;
     color: black;
 }
 
 .content .card.item .card-text {
-    font-weight: bold;
     color: #44D62D;
 }
 
-.content .card.item .list-inline .list-inline-item {
+.content .d-flex .star-total {
+    margin-right: 55px;
+}
+
+.content .d-flex .star-total h1 {
+    font-size: 60px;
+}
+
+.content .d-flex .star-total .list-inline .list-inline-item img {
+    width: 20px;
+}
+
+.content .d-flex .rating img {
+    width: 16px;
+}
+
+.content .d-flex .rating .rating-bar {
+    width: 110px;
+}
+
+.content .d-flex .rating .ml-2 {
+    width: 10px;
+}
+
+.progress {
+    height: 6px;
+}
+
+.progress-bar {
+    background-color: #44D62D;
+}
+
+hr {
     margin: 0;
+    margin-top: 30px;
+}
+
+.content .link-header span,
+.content .link-header a,
+.content .product-info p,
+.content .d-flex .rating p,
+.content .product-title h6,
+.content .product-price h6  {
+    color: #6c757d;
+}
+
+.content .selectable-img {
+    width: 370px;
+}
+
+.content .selectable-img .main-img img{
+    width: 370px;
+    height: 370px;
+    border-radius: 8px;
+}
+
+.content .d-flex .product-price p{
+    font-size: 30px;
+}
+
+.content .product-color .d-flex button,
+.content .size-quantity .d-flex button {
+    width: 35px;
+    height: 35px;
+}
+
+.content .product-button .btn {
+    border-radius: 25px;
+    font-size: 14px;
+    height: 48px;
+    width: 155px;
+}
+
+.content .product-button .btn.btn-primary {
+    width: 340px;
 }
