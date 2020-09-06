@@ -2,12 +2,22 @@ body {
     font-family: Metropolis Regular;
 }
 
-a {
+a, 
+.content .card.item .card-text,
+.content.cart-checkout .d-flex .card .d-flex .total-checkout p {
     color: #44D62D;
 }
 
 a,
-p {
+p,
+.navbar-light button,
+.form-login-register .register button,
+.form-login-register .login button,
+.form-login-register input,
+.form-login-register .switch button,
+.content .product-button .btn,
+.content.cart-checkout .d-flex .card .btn.btn-primary.btn-block,
+.content.cart-checkout .d-flex .card .btn.border{
     font-size: 14px;
 }
 
@@ -35,7 +45,6 @@ a:hover {
     margin-top: 45px;
     margin-bottom: 35px;
     border-radius: 25px;
-    font-size: 14px;
     height: 48px;
 }
 
@@ -43,7 +52,6 @@ a:hover {
     margin-top: 20px;
     margin-bottom: 35px;
     border-radius: 25px;
-    font-size: 14px;
     height: 48px;
 }
 
@@ -57,7 +65,6 @@ a:hover {
 }
 
 .form-login-register input {
-    font-size: 14px;
     height: 48px;
     padding-left: 23px;
 }
@@ -67,7 +74,6 @@ a:hover {
 }
 
 .form-login-register .switch button {
-    font-size: 14px;
     width: 123px;
     height: 48px;
     color: #6c757d;
@@ -92,10 +98,6 @@ a:hover {
 .navbar-light .search-bar .btn.border {
     border: 1px solid #8E8E93;
     border-radius: 12px;
-}
-
-.navbar-light button {
-    font-size: 14px;
 }
 
 .navbar-light .nav-end .btn {
@@ -135,10 +137,6 @@ a:hover {
     color: black;
 }
 
-.content .card.item .card-text {
-    color: #44D62D;
-}
-
 .content .d-flex .star-total {
     margin-right: 55px;
 }
@@ -172,8 +170,7 @@ a:hover {
 }
 
 hr {
-    margin: 0;
-    margin-top: 30px;
+    border-top: 1px solid #9B9B9B;
 }
 
 .content .link-header span,
@@ -209,7 +206,6 @@ hr {
 
 .content .product-button .btn {
     border-radius: 25px;
-    font-size: 14px;
     height: 48px;
     width: 155px;
 }
@@ -228,9 +224,13 @@ hr {
     width: 360px;
 }
 
+.content.cart-checkout .d-flex .card.summary-checkout {
+    height: 270px;
+    width: 360px;
+}
+
 .content.cart-checkout .d-flex .card .btn.btn-primary.btn-block {
     border-radius: 25px;
-    font-size: 14px;
     height: 36px;
 }
 
@@ -238,11 +238,22 @@ hr {
     font-size: 18px;
 }
 
-.content.cart-checkout .d-flex .card .custom-control .custom-control-label img {
+.content.cart-checkout .d-flex .card .custom-control .custom-control-label .img-cart,
+.content.cart-checkout .d-flex .card .checkout-list .img-cart {
     width: 65px;
-    height: auto;
+    height: 65px;
+    border-radius: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #44D62D;
+}
+
+.content.cart-checkout .d-flex .card .btn.border {
+    border-radius: 25px;
+    color: #6c757d;
+    height: 36px;
 }
