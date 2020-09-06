@@ -342,7 +342,8 @@ hr {
     width: 550px;
 }
 
-.category-carousel .card {
+.category-carousel .card,
+.promo-carousel .card {
     height: 200px;
     border-radius: 8px;
 }
