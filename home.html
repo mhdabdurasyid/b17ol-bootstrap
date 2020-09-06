@@ -33,7 +33,7 @@
         </nav>
 
         <div class="content">
-            <div>
+            <div class="container-fluid">
 
             </div>
             <div class="container-fluid">
@@ -41,7 +41,106 @@
                 <h6 class="subcontent">
                     <small class="text-muted">What are you currently looking for</small>
                 </h6>
-                
+                <div id="category-carousel" class="category-carousel carousel slide mb-3" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="10000">
+                            <div class="row row-cols-md-5">
+                                <div class="col">
+                                    <div class="card text-white" style="background: #CC0B04;">
+                                        <div class="category-img mx-auto my-auto img-fluid"
+                                            style="background-image: url(./assets/img/item/shirt.png);">
+                                        </div>
+                                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                            <h3 class="card-title font-weight-bold">T-Shirt</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card text-white" style="background: #1C3391;;">
+                                        <div class="category-img mx-auto my-auto img-fluid"
+                                            style="background-image: url(./assets/img/item/shoes.png);">
+                                        </div>
+                                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                            <h3 class="card-title font-weight-bold">Shoes</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card text-white" style="background: #F67B02;">
+                                        <div class="category-img mx-auto my-auto img-fluid"
+                                            style="background-image: url(./assets/img/item/pants.png);">
+                                        </div>
+                                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                            <h3 class="card-title font-weight-bold">Pants</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card text-white" style="background: #E31F51;">
+                                        <div class="category-img mx-auto my-auto img-fluid"
+                                            style="background-image: url(./assets/img/item/jacket.png);">
+                                        </div>
+                                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                            <h3 class="card-title font-weight-bold">Jacket</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card text-white" style="background: #57CD9E;">
+                                        <div class="category-img mx-auto my-auto img-fluid"
+                                            style="background-image: url(./assets/img/item/shorts.png);">
+                                        </div>
+                                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                            <h3 class="card-title font-weight-bold">Shorts</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-interval="10000">
+                            <div class="row row-cols-md-5">
+                                <div class="col">
+                                    <div class="card text-white" style="background: #F67B02;">
+                                        <div class="category-img mx-auto my-auto img-fluid"
+                                            style="background-image: url(./assets/img/item/pants.png);">
+                                        </div>
+                                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                            <h3 class="card-title font-weight-bold">Pants</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card text-white" style="background: #E31F51;">
+                                        <div class="category-img mx-auto my-auto img-fluid"
+                                            style="background-image: url(./assets/img/item/jacket.png);">
+                                        </div>
+                                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                            <h3 class="card-title font-weight-bold">Jacket</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card text-white" style="background: #57CD9E;">
+                                        <div class="category-img mx-auto my-auto img-fluid"
+                                            style="background-image: url(./assets/img/item/shorts.png);">
+                                        </div>
+                                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                            <h3 class="card-title font-weight-bold">Shorts</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#category-carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#category-carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
             <div class="container-fluid">
                 <h2 class="m-0 font-weight-bold">New</h2>
@@ -581,6 +680,11 @@
             </div>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="./assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>

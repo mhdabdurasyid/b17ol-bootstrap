@@ -172,7 +172,7 @@ a:hover {
     border-radius: 25px;
     height: 35px;
     width: 135px;
-} 
+}
 
 .content h3,
 .content .container-fluid h2 {
@@ -235,7 +235,7 @@ hr {
 }
 
 .border-right {
-    border-color:#9B9B9B !important;
+    border-color: #9B9B9B !important;
     height: 160px;
 }
 
@@ -315,6 +315,14 @@ hr {
     background-position: 50% 50%;
 }
 
+.category-carousel .category-img {
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before,
 .custom-radio .custom-control-input:checked~.custom-control-label::before {
     background-color: #44D62D;
@@ -332,4 +340,9 @@ hr {
 
 .profile .card .edit-profile {
     width: 550px;
+}
+
+.category-carousel .card {
+    height: 200px;
+    border-radius: 8px;
 }
