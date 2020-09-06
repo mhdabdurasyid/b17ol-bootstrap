@@ -2,7 +2,7 @@ body {
     font-family: Metropolis Regular;
 }
 
-a, 
+a,
 .content .card.item .card-text,
 .content.cart-checkout .d-flex .card .d-flex .total-checkout p {
     color: #44D62D;
@@ -17,7 +17,13 @@ p,
 .form-login-register .switch button,
 .content .product-button .btn,
 .content.cart-checkout .d-flex .card .btn.btn-primary.btn-block,
-.content.cart-checkout .d-flex .card .btn.border{
+.content.cart-checkout .d-flex .card .btn.border,
+.profile .edit-profile form,
+.profile .edit-profile form input,
+.profile .edit-profile form select,
+.profile .edit-profile form button,
+.profile .edit-profile form .col-form-label-lg,
+.profile .upload-img .btn.border {
     font-size: 14px;
 }
 
@@ -35,6 +41,14 @@ a:hover {
 .btn-primary:hover {
     background-color: #44ad34;
     border-color: #44ad34;
+}
+
+.btn:hover,
+.btn.border:hover,
+.navbar-light .nav-end .btn.border:hover,
+.content.cart-checkout .d-flex .card .btn.border:hover,
+.profile .upload-img .btn.border:hover {
+    color: white;
 }
 
 .form-login-register {
@@ -89,7 +103,7 @@ a:hover {
 .navbar-light .search-bar .form-control {
     border-radius: 23px;
     margin-left: 60px;
-    width: 490px;
+    width: 480px;
     padding-left: 20px;
     background: url(/assets/img/icon/search.svg) no-repeat;
     background-position: 97% 50%;
@@ -101,7 +115,7 @@ a:hover {
 }
 
 .navbar-light .nav-end .btn {
-    width: 90px;
+    width: 85px;
     border-radius: 24px;
 }
 
@@ -113,6 +127,52 @@ a:hover {
 .content {
     margin: 40px 140px;
 }
+
+.profile-nav {
+    width: 260px;
+}
+
+.profile-nav .photo-profile img {
+    height: 60px;
+    width: 60px;
+}
+
+.profile-nav .edit-profile-link img {
+    height: 14px;
+    width: 14px;
+}
+
+.profile-nav .btn.rounded-circle {
+    height: 32px;
+    width: 32px;
+}
+
+.profile {
+    width: 1030px;
+    height: 90vh;
+    padding-left: 40px;
+    padding-top: 45px;
+    padding-bottom: 100px;
+    background-color: #F5F5F5;
+}
+
+.profile .edit-profile form button {
+    height: 36px;
+    width: 100px;
+    border-radius: 25px;
+}
+
+.profile .upload-img img {
+    height: 110px;
+    width: 110px;
+}
+
+.profile .upload-img .btn.border {
+    color: #6c757d;
+    border-radius: 25px;
+    height: 35px;
+    width: 135px;
+} 
 
 .content h3,
 .content .container-fluid h2 {
@@ -133,7 +193,8 @@ a:hover {
     border-radius: 8px;
 }
 
-.content .card.item .card-title {
+.content .card.item .card-title,
+.profile-nav a.active {
     color: black;
 }
 
@@ -179,7 +240,8 @@ hr {
 .content .d-flex .rating p,
 .content .product-title h6,
 .content .product-price h6,
-.content.cart-checkout .d-flex .card .d-flex .total h6 {
+.content.cart-checkout .d-flex .card .d-flex .total h6,
+.profile-nav a {
     color: #6c757d;
 }
 
@@ -220,12 +282,12 @@ hr {
 }
 
 .content.cart-checkout .d-flex .card.summary {
-    height: 180px;
+    height: 175px;
     width: 360px;
 }
 
 .content.cart-checkout .d-flex .card.summary-checkout {
-    height: 270px;
+    height: 260px;
     width: 360px;
 }
 
@@ -248,7 +310,8 @@ hr {
     background-position: 50% 50%;
 }
 
-.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before,
+.custom-radio .custom-control-input:checked~.custom-control-label::before {
     background-color: #44D62D;
 }
 
@@ -256,4 +319,12 @@ hr {
     border-radius: 25px;
     color: #6c757d;
     height: 36px;
+}
+
+.profile .card {
+    width: 840px;
+}
+
+.profile .card .edit-profile {
+    width: 550px;
 }
