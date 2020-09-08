@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="A best partner for your shopping time">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
     <link rel="stylesheet" href="./assets/font/metropolis.css">
@@ -11,46 +12,55 @@
 </head>
 
 <body>
-    <div class="vh-100">
-        <nav class="navbar navbar-light">
-            <div class="form-inline">
-                <a class="navbar-brand" href="home.html">
-                    <img src="./assets/img/icon/logo.svg" alt="">
-                </a>
-                <div class="search-bar">
-                    <form>
-                        <input class="form-control mr-2" type="search" placeholder="Search">
-                        <button class="btn border" type="submit"><img src="./assets/img/icon/filter.svg"
-                                alt=""></button>
-                    </form>
+    <nav class="navbar navbar-expand-lg navbar-light pl-5 pr-5 shadow p-3 mb-4">
+        <a class="navbar-brand ml-5" href="home.html">
+            <img src="./assets/img/icon/logo.svg" alt="Wakede Logo">
+        </a>
+        <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navigation"
+            aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ml-5 mr-5" id="navigation">
+            <form class="form-inline mr-auto">
+                <input class="form-control rounded-pill ml-5 mr-2" type="text" placeholder="Search">
+                <button class="btn border rounded-pill"><img src="./assets/img/icon/filter.svg" alt="..."></button>
+            </form>
+            <div class="d-flex flex-row align-items-center">
+                <div class="mr-5">
+                    <a href="cart.html"><img src="./assets/img/icon/cart.svg" alt="..."></a>
+                </div>
+                <div class="mr-5">
+                    <a href="#notification"><img src="./assets/img/icon/notification.svg" alt="..."></a>
+                </div>
+                <div class="mr-5">
+                    <a href="#message"><img src="./assets/img/icon/message.svg" alt="..."></a>
+                </div>
+                <div>
+                    <a href="profile.html"><img src="./assets/img/item/profile.png" alt="..." class="rounded-circle"
+                            style="height: 32px;width: 32px;"></a>
                 </div>
             </div>
-            <div class="nav-end">
-                <a href="cart.html" style="margin-right: 35px;"><img src="./assets/img/icon/cart.svg" alt=""></a>
-                <a href="#notification" style="margin-right: 35px;"><img src="./assets/img/icon/notification.svg"
-                        alt=""></a>
-                <a href="#message" style="margin-right: 35px;"><img src="./assets/img/icon/message.svg" alt=""></a>
-                <a href="profile.html"><img src="./assets/img/item/profile.png" alt="" class="rounded-circle"
-                        style="height: 32px;width: 32px;"></a>
-            </div>
-        </nav>
+        </div>
+    </nav>
 
-        <div class="content cart-checkout">
-            <h2 class="m-0 pl-3 font-weight-bold">Checkout</h2>
-            <div class="container-fluid mt-4">
-                <div class="d-flex flex-row">
-                    <div>
+    <main class="wh-100">
+        <section class="container-fluid">
+            <div class="content-header ml-5 mr-5 pl-5 pr-5">
+                <h2 class="font-weight-bold mt-5 mb-4">Checkout</h2>
+                <div class="row">
+                    <div class="address col-sm-6 col-md-8">
                         <h6 class="font-weight-bold mb-2">Shipping Address</h6>
-                        <div class="card mb-3 p-4" style="width: 700px;">
+                        <div class="card shadow-sm mb-3 p-4">
                             <h6 class="font-weight-bold">Andreas Jane</h6>
                             <p>Perumahan Sapphire Mediterania, Wiradadi, Kec. Sokaraja, Kabupaten
                                 Banyumas, Jawa Tengah, 53181 [Tokopedia Note: blok c 16] Sokaraja, Kab. Banyumas, 53181
                             </p>
-                            <button class="btn border">Choose another address</button>
+                            <button class="btn border rounded-pill">Choose another address</button>
                         </div>
-                        <div class="card mb-3 p-4" style="width: 700px;">
-                            <div class="d-flex flex-row justify-content-between align-items-center">
-                                <div class="checkout-list">
+                        <div class="card shadow-sm mb-3 p-4">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6">
                                     <div class="d-flex flex-row align-items-center">
                                         <div class="img-cart ml-3 mr-3"
                                             style="background-image: url(./assets/img/item/item.png);">
@@ -61,14 +71,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <h6 class="font-weight-bold m-0">$ 40.0</h6>
+                                <div class="col-sm-12 col-md-6 align-self-center">
+                                    <h6 class="font-weight-bold text-right m-0">$ 40.0</h6>
                                 </div>
                             </div>
                         </div>
-                        <div class="card mb-3 p-4" style="width: 700px;">
-                            <div class="d-flex flex-row justify-content-between align-items-center">
-                                <div class="checkout-list">
+                        <div class="card shadow-sm mb-3 p-4">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6">
                                     <div class="d-flex flex-row align-items-center">
                                         <div class="img-cart ml-3 mr-3"
                                             style="background-image: url(./assets/img/item/item.png);">
@@ -79,45 +89,53 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <h6 class="font-weight-bold m-0">$ 20.0</h6>
+                                <div class="col-sm-12 col-md-6 align-self-center">
+                                    <h6 class="font-weight-bold text-right m-0">$ 40.0</h6>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card summary-checkout p-4 ml-5">
-                        <h6 class="font-weight-bold mb-3">Shopping summary</h6>
-                        <div class="d-flex flex-row justify-content-between align-items-center">
-                            <div class="total">
-                                <h6 class="font-weight-bold mb-1">Order</h6>
+                    <div class="cart-summary col-sm-6 col-md-4">
+                        <div class="card shadow-sm p-4 mb-4">
+                            <h6 class="font-weight-bold mb-3">Shopping summary</h6>
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                <div class="total">
+                                    <h6 class="font-weight-bold text-muted mb-1">Order</h6>
+                                </div>
+                                <div>
+                                    <p class="font-weight-bold mb-1">$ 80.0</p>
+                                </div>
                             </div>
-                            <div>
-                                <p class="font-weight-bold mb-1">$ 60.0</p>
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                <div class="total">
+                                    <h6 class="font-weight-bold text-muted m-0">Delivery</h6>
+                                </div>
+                                <div>
+                                    <p class="font-weight-bold m-0">$ 4.0</p>
+                                </div>
                             </div>
+                            <hr>
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                <div class="total-checkout">
+                                    <h6 class="font-weight-bold mb-3">Shopping summary</h6>
+                                </div>
+                                <div class="total-checkout">
+                                    <p class="font-weight-bold mb-3" style="color: #44D62D">$ 84.0</p>
+                                </div>
+                            </div>
+                            <a href="#payment"><button class="btn btn-primary btn-block rounded-pill">Select
+                                    Payment</button></a>
                         </div>
-                        <div class="d-flex flex-row justify-content-between align-items-center">
-                            <div class="total">
-                                <h6 class="font-weight-bold m-0">Delivery</h6>
-                            </div>
-                            <div>
-                                <p class="font-weight-bold m-0">$ 4.0</p>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="d-flex flex-row justify-content-between align-items-center">
-                            <div class="total-checkout">
-                                <h6 class="font-weight-bold mb-3">Shopping summary</h6>
-                            </div>
-                            <div class="total-checkout">
-                                <p class="font-weight-bold mb-3">$ 64.0</p>
-                            </div>
-                        </div>
-                        <a href="#payment"><button class="btn btn-primary btn-block">Select Payment</button></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="./assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>

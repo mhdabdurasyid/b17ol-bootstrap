@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="A best partner for your shopping time">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Bag</title>
     <link rel="stylesheet" href="./assets/font/metropolis.css">
@@ -11,41 +12,50 @@
 </head>
 
 <body>
-    <div class="vh-100">
-        <nav class="navbar navbar-light">
-            <div class="form-inline">
-                <a class="navbar-brand" href="home.html">
-                    <img src="./assets/img/icon/logo.svg" alt="">
-                </a>
-                <div class="search-bar">
-                    <form>
-                        <input class="form-control mr-2" type="search" placeholder="Search">
-                        <button class="btn border" type="submit"><img src="./assets/img/icon/filter.svg"
-                                alt=""></button>
-                    </form>
+    <nav class="navbar navbar-expand-lg navbar-light pl-5 pr-5 shadow p-3 mb-4">
+        <a class="navbar-brand ml-5" href="home.html">
+            <img src="./assets/img/icon/logo.svg" alt="Wakede Logo">
+        </a>
+        <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navigation"
+            aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ml-5 mr-5" id="navigation">
+            <form class="form-inline mr-auto">
+                <input class="form-control rounded-pill ml-5 mr-2" type="text" placeholder="Search">
+                <button class="btn border rounded-pill"><img src="./assets/img/icon/filter.svg" alt="..."></button>
+            </form>
+            <div class="d-flex flex-row align-items-center">
+                <div class="mr-5">
+                    <a href="cart.html"><img src="./assets/img/icon/cart.svg" alt="..."></a>
+                </div>
+                <div class="mr-5">
+                    <a href="#notification"><img src="./assets/img/icon/notification.svg" alt="..."></a>
+                </div>
+                <div class="mr-5">
+                    <a href="#message"><img src="./assets/img/icon/message.svg" alt="..."></a>
+                </div>
+                <div>
+                    <a href="profile.html"><img src="./assets/img/item/profile.png" alt="..." class="rounded-circle"
+                            style="height: 32px;width: 32px;"></a>
                 </div>
             </div>
-            <div class="nav-end">
-                <a href="cart.html" style="margin-right: 35px;"><img src="./assets/img/icon/cart.svg" alt=""></a>
-                <a href="#notification" style="margin-right: 35px;"><img src="./assets/img/icon/notification.svg"
-                        alt=""></a>
-                <a href="#message" style="margin-right: 35px;"><img src="./assets/img/icon/message.svg" alt=""></a>
-                <a href="profile.html"><img src="./assets/img/item/profile.png" alt="" class="rounded-circle"
-                        style="height: 32px;width: 32px;"></a>
-            </div>
-        </nav>
+        </div>
+    </nav>
 
-        <div class="content cart-checkout">
-            <h2 class="m-0 pl-3 font-weight-bold">My Bag</h2>
-            <div class="container-fluid mt-4">
-                <div class="d-flex flex-row">
-                    <div>
-                        <div class="card mr-5 mb-3 p-4" style="width: 700px;">
-                            <div class="d-flex flex-row justify-content-between">
+    <main class="wh-100">
+        <section class="container-fluid">
+            <div class="content-header ml-5 mr-5 pl-5 pr-5">
+                <h2 class="font-weight-bold mt-5 mb-4">My Bag</h2>
+                <div class="delete-cart row">
+                    <div class="col-sm-6 col-md-8">
+                        <div class="card shadow-sm mb-3 p-4">
+                            <div class="d-flex flex-row justify-content-between align-items-center">
                                 <div class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" id="delete-items">
-                                    <label class="custom-control-label" for="delete-items">
-                                        <span class="ml-2">Select all items</span><span class="text-muted"> (2 items
+                                    <label class="custom-control-label pl-2" for="delete-items">
+                                        <span>Select all items</span><span class="text-muted"> (2 items
                                             selected)</span>
                                     </label>
                                 </div>
@@ -54,91 +64,107 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card mr-5 mb-2 p-4" style="width: 700px;">
-                            <div class="d-flex flex-row justify-content-between align-items-center">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="item1">
-                                    <label class="custom-control-label" for="item1">
-                                        <div class="d-flex flex-row align-items-center">
-                                            <div class="img-cart ml-3 mr-3"
-                                                style="background-image: url(./assets/img/item/item.png);">
+                        <div class="card shadow-sm mb-2 p-4">
+                            <div class="cart-checkbox row">
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="item1">
+                                        <label class="custom-control-label" for="item1">
+                                            <div class="d-flex flex-row align-items-center">
+                                                <div class="img-cart ml-3 mr-3"
+                                                    style="background-image: url(./assets/img/item/item.png);">
+                                                </div>
+                                                <div>
+                                                    <h6 class="font-weight-bold m-0">Men's Formal Suit - Black</h6>
+                                                    <small class="text-muted">Zalora Cloth</small>
+                                                </div>
                                             </div>
-                                            <div>
-                                                <h6 class="font-weight-bold m-0">Men's Formal Suit - Black</h6>
-                                                <small class="text-muted">Zalora Cloth</small>
-                                            </div>
-                                        </div>
-                                    </label>
-                                </div>
-                                <div class="cart-quantity d-flex flex-row align-items-center">
-                                    <div class="d-flex flex-row align-items-center">
-                                        <button class="btn rounded-circle mr-1 p-0"
-                                            style="background-color: #D4D4D4;"><img src="./assets/img/icon/minus.svg"
-                                                alt=""></button>
-                                        <div class="text-center" style="width: 40px;">
-                                            <span>1</span>
-                                        </div>
-                                        <button class="btn rounded-circle ml-1 p-0"
-                                            style="box-shadow: 0px 0px 4px rgba(142, 142, 142, 0.25);"><img
-                                                src="./assets/img/icon/plus.svg" alt=""></button>
+                                        </label>
                                     </div>
-                                    <div class="ml-5">
-                                        <h6 class="font-weight-bold m-0">$ 40.0</h6>
+                                </div>
+                                <div class="col-sm-12 col-md-6 align-self-center">
+                                    <div class="d-flex flex-row justify-content-end align-items-center">
+                                        <div class="d-flex flex-row align-items-center">
+                                            <button class="btn rounded-circle mr-1 p-0"
+                                                style="background-color: #D4D4D4;"><img
+                                                    src="./assets/img/icon/minus.svg" alt="..."></button>
+                                            <div class="text-center" style="width: 40px;">
+                                                <span>1</span>
+                                            </div>
+                                            <button class="btn rounded-circle ml-1 p-0"
+                                                style="box-shadow: 0px 0px 4px rgba(142, 142, 142, 0.25);"><img
+                                                    src="./assets/img/icon/plus.svg" alt="..."></button>
+                                        </div>
+                                        <div class="ml-5">
+                                            <h6 class="font-weight-bold m-0">$ 40.0</h6>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card mr-5 mb-2 p-4" style="width: 700px;">
-                            <div class="d-flex flex-row justify-content-between align-items-center">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="item2">
-                                    <label class="custom-control-label" for="item2">
-                                        <div class="d-flex flex-row align-items-center">
-                                            <div class="img-cart ml-3 mr-3"
-                                                style="background-image: url(./assets/img/item/item.png);">
+                        <div class="card shadow-sm mb-2 p-4">
+                            <div class="cart-checkbox row">
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="item2">
+                                        <label class="custom-control-label" for="item2">
+                                            <div class="d-flex flex-row align-items-center">
+                                                <div class="img-cart ml-3 mr-3"
+                                                    style="background-image: url(./assets/img/item/item.png);">
+                                                </div>
+                                                <div>
+                                                    <h6 class="font-weight-bold m-0">Men's Formal Suit - Black</h6>
+                                                    <small class="text-muted">Zalora Cloth</small>
+                                                </div>
                                             </div>
-                                            <div>
-                                                <h6 class="font-weight-bold m-0">Men's Formal Suit - Black</h6>
-                                                <small class="text-muted">Zalora Cloth</small>
-                                            </div>
-                                        </div>
-                                    </label>
-                                </div>
-                                <div class="cart-quantity d-flex flex-row align-items-center">
-                                    <div class="d-flex flex-row align-items-center">
-                                        <button class="btn rounded-circle mr-1 p-0"
-                                            style="background-color: #D4D4D4;"><img src="./assets/img/icon/minus.svg"
-                                                alt=""></button>
-                                        <div class="text-center" style="width: 40px;">
-                                            <span>1</span>
-                                        </div>
-                                        <button class="btn rounded-circle ml-1 p-0"
-                                            style="box-shadow: 0px 0px 4px rgba(142, 142, 142, 0.25);"><img
-                                                src="./assets/img/icon/plus.svg" alt=""></button>
+                                        </label>
                                     </div>
-                                    <div class="ml-5">
-                                        <h6 class="font-weight-bold m-0">$ 20.0</h6>
+                                </div>
+                                <div class="col-sm-12 col-md-6 align-self-center">
+                                    <div class="d-flex flex-row justify-content-end align-items-center">
+                                        <div class="d-flex flex-row align-items-center">
+                                            <button class="btn rounded-circle mr-1 p-0"
+                                                style="background-color: #D4D4D4;"><img
+                                                    src="./assets/img/icon/minus.svg" alt="..."></button>
+                                            <div class="text-center" style="width: 40px;">
+                                                <span>1</span>
+                                            </div>
+                                            <button class="btn rounded-circle ml-1 p-0"
+                                                style="box-shadow: 0px 0px 4px rgba(142, 142, 142, 0.25);"><img
+                                                    src="./assets/img/icon/plus.svg" alt="..."></button>
+                                        </div>
+                                        <div class="ml-5">
+                                            <h6 class="font-weight-bold m-0">$ 40.0</h6>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card summary p-4">
-                        <h6 class="font-weight-bold mb-3">Shopping summary</h6>
-                        <div class="d-flex flex-row justify-content-between align-items-center">
-                            <div class="total">
-                                <h6 class="font-weight-bold mb-4">Total price</h6>
+                    <div class="cart-summary col-sm-6 col-md-4">
+                        <div class="card shadow-sm p-4 mb-5">
+                            <h6 class="font-weight-bold mb-3">Shopping summary</h6>
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="font-weight-bold text-muted mb-4">Total price</h6>
+                                </div>
+                                <div>
+                                    <p class="font-weight-bold mb-4">$ 80.0</p>
+                                </div>
                             </div>
-                            <div>
-                                <p class="font-weight-bold mb-4">$ 60.0</p>
-                            </div>
+                            <a href="checkout.html"><button
+                                    class="btn btn-primary btn-block rounded-pill">Buy</button></a>
                         </div>
-                        <a href="checkout.html"><button class="btn btn-primary btn-block">Buy</button></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="./assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="A best partner for your shopping time">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
     <link rel="stylesheet" href="./assets/font/metropolis.css">
@@ -11,99 +12,114 @@
 </head>
 
 <body>
-    <div class="vh-100">
-        <nav class="navbar navbar-light">
-            <div class="form-inline">
-                <a class="navbar-brand" href="home.html">
-                    <img src="./assets/img/icon/logo.svg" alt="">
-                </a>
-                <div class="search-bar">
-                    <form>
-                        <input class="form-control mr-2" type="search" placeholder="Search">
-                        <button class="btn border" type="submit"><img src="./assets/img/icon/filter.svg"
-                                alt=""></button>
-                    </form>
+    <nav class="navbar navbar-expand-lg navbar-light pl-5 pr-5 shadow p-3">
+        <a class="navbar-brand ml-5" href="home.html">
+            <img src="./assets/img/icon/logo.svg" alt="Wakede Logo">
+        </a>
+        <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navigation"
+            aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ml-5 mr-5" id="navigation">
+            <form class="form-inline mr-auto">
+                <input class="form-control rounded-pill ml-5 mr-2" type="text" placeholder="Search">
+                <button class="btn border rounded-pill"><img src="./assets/img/icon/filter.svg" alt="..."></button>
+            </form>
+            <div class="d-flex flex-row align-items-center">
+                <div class="mr-5">
+                    <a href="cart.html"><img src="./assets/img/icon/cart.svg" alt="..."></a>
+                </div>
+                <div class="mr-5">
+                    <a href="#notification"><img src="./assets/img/icon/notification.svg" alt="..."></a>
+                </div>
+                <div class="mr-5">
+                    <a href="#message"><img src="./assets/img/icon/message.svg" alt="..."></a>
+                </div>
+                <div>
+                    <a href="profile.html"><img src="./assets/img/item/profile.png" alt="..." class="rounded-circle"
+                            style="height: 32px;width: 32px;"></a>
                 </div>
             </div>
-            <div class="nav-end">
-                <a href="cart.html" style="margin-right: 35px;"><img src="./assets/img/icon/cart.svg" alt=""></a>
-                <a href="#notification" style="margin-right: 35px;"><img src="./assets/img/icon/notification.svg"
-                        alt=""></a>
-                <a href="#message" style="margin-right: 35px;"><img src="./assets/img/icon/message.svg" alt=""></a>
-                <a href="profile.html"><img src="./assets/img/item/profile.png" alt="" class="rounded-circle"
-                        style="height: 32px;width: 32px;"></a>
-            </div>
-        </nav>
+        </div>
+    </nav>
 
-        <div class="d-flex flex-row justify-content-end">
-            <div class="profile-nav mt-5">
-                <div class="d-flex flex-row align-items-center mb-5">
-                    <div class="photo-profile mr-3">
-                        <img src="./assets/img/item/profile.png" alt="" class="rounded-circle">
-                    </div>
-                    <div class="edit-profile-link">
-                        <h6 class="font-weight-bold">Andreas Jane</h6>
-                        <div>
-                            <a href="#edit-profile"><img src="./assets/img/icon/edit.svg" alt="" class="mr-1"> Edit
-                                Profile</a>
+    <div class="container-fluid" style="background-color: #F5F5F5">
+        <div class="my-profile row">
+            <nav id="navigation" class="sidenav col-md-3 d-md-block collapse">
+                <div class="sidebar ml-5 pl-5 mt-5">
+                    <div class="d-flex flex-row align-items-center mb-5">
+                        <div class="photo-profile mr-3">
+                            <img src="./assets/img/item/profile.png" alt="..." class="rounded-circle">
+                        </div>
+                        <div class="edit-profile-link">
+                            <h6 class="font-weight-bold">Andreas Jane</h6>
+                            <div>
+                                <a class="text-muted" href="#edit-profile"><img src="./assets/img/icon/edit.svg" alt="..." class="mr-1"> Edit
+                                    Profile</a>
+                            </div>
                         </div>
                     </div>
+
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">
+                                <button class="btn rounded-circle p-0 mr-2" style="background-color: #456BF3;"><img
+                                        src="./assets/img/icon/user.svg" alt="..."></button> My Account
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">
+                                <button class="btn rounded-circle p-0 mr-2" style="background-color: #F36F45;"><img
+                                        src="./assets/img/icon/address.svg" alt="..."></button> Shipping Address
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">
+                                <button class="btn rounded-circle p-0 mr-2" style="background-color: #F3456F;"><img
+                                        src="./assets/img/icon/order.svg" alt="..."></button> My Order
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="d-flex flex-row align-items-center">
-                    <a href="#my-account" class="active mt-3">
-                        <button class="btn rounded-circle p-0 mr-2" style="background-color: #456BF3;"><img
-                                src="./assets/img/icon/user.svg" alt=""></button> My Account
-                    </a>
-                </div>
-                <div class="d-flex flex-row align-items-center">
-                    <a href="#my-account" class="mt-4">
-                        <button class="btn rounded-circle p-0 mr-2" style="background-color: #F36F45;"><img
-                                src="./assets/img/icon/address.svg" alt=""></button> Shipping Address
-                    </a>
-                </div>
-                <div class="d-flex flex-row align-items-center">
-                    <a href="#my-account" class="mt-4">
-                        <button class="btn rounded-circle p-0 mr-2" style="background-color: #F3456F;"><img
-                                src="./assets/img/icon/order.svg" alt=""></button> My Order
-                    </a>
-                </div>
-            </div>
-            <div class="profile">
-                <div class="card p-4">
+            </nav>
+
+            <main class="main-my-profile col-sm-12 col-md-7 ml-5 mt-5">
+                <div class="card shadow-sm p-4 mb-5">
                     <h4 class="font-weight-bold">My Profile</h4>
                     <p class="text-muted m-0">Manage your profile information</p>
-                    <hr class="">
-                    <div class="d-flex flex-row justify-content-between mt-3">
-                        <div class="edit-profile">
+                    <hr class="mb-4">
+                    <div class="form-my-profile row">
+                        <div class="col-sm-12 col-md-9">
                             <form action="#save-profile">
                                 <div class="form-group row">
                                     <label for="name"
-                                        class="col-3 col-form-label col-form-label-lg text-muted text-right">Name</label>
-                                    <div class="col-8">
+                                        class="col-md-3 col-form-label col-form-label-lg text-muted text-right">Name</label>
+                                    <div class="col-md-9">
                                         <input type="text" class="form-control form-control-lg" id="name"
-                                            placeholder="Andreas Jane">
+                                            value="Andreas Jane">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="email"
-                                        class="col-3 col-form-label col-form-label-lg text-muted text-right">Email</label>
-                                    <div class="col-8">
+                                        class="col-md-3 col-form-label col-form-label-lg text-muted text-right">Email</label>
+                                    <div class="col-md-9">
                                         <input type="email" class="form-control form-control-lg" id="email"
-                                            placeholder="andjane@gmail.com ">
+                                            value="andjane@gmail.com ">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="phone"
-                                        class="col-3 col-form-label col-form-label-lg text-muted text-right">Phone
+                                        class="col-md-3 col-form-label col-form-label-lg text-muted text-right">Phone
                                         Number</label>
-                                    <div class="col-8">
+                                    <div class="col-md-9">
                                         <input type="text" class="form-control form-control-lg" id="phone"
-                                            placeholder="08901289012">
+                                            value="08901289012">
                                     </div>
                                 </div>
-                                <div class="form-group row">
-                                    <label class="col-3 col-form-label text-muted text-right">Gender</label>
-                                    <div class="col-2">
+                                <div class="gender form-group row">
+                                    <label class="col-md-3 col-form-label text-muted text-right">Gender</label>
+                                    <div class="col-md-2">
                                         <div class="custom-control custom-radio custom-control-inline pt-1">
                                             <input type="radio" id="man" name="gender" class="custom-control-input"
                                                 checked>
@@ -111,7 +127,7 @@
                                                 for="man">Man</label>
                                         </div>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-md-2">
                                         <div class="custom-control custom-radio custom-control-inline pt-1">
                                             <input type="radio" id="woman" name="gender" class="custom-control-input">
                                             <label class="custom-control-label text-muted m-0 pt-1"
@@ -120,9 +136,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-3 col-form-label col-form-label-lg text-muted text-right">Date of
+                                    <label class="col-md-3 col-form-label col-form-label-lg text-muted text-right">Date of
                                         birth</label>
-                                    <div class="col-2">
+                                    <div class="col-md-3">
                                         <select class="form-control form-control-lg">
                                             <option>1</option>
                                             <option>2</option>
@@ -131,7 +147,7 @@
                                             <option>5</option>
                                         </select>
                                     </div>
-                                    <div class="col-3 pl-1 pr-1">
+                                    <div class="col-md-3">
                                         <select class="form-control form-control-lg">
                                             <option>January</option>
                                             <option>February</option>
@@ -140,7 +156,7 @@
                                             <option>May</option>
                                         </select>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-md-3">
                                         <select class="form-control form-control-lg">
                                             <option>1990</option>
                                             <option>1991</option>
@@ -151,27 +167,34 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-3"></div>
-                                    <div class="ml-3 mt-2">
-                                        <button type="submit" class="btn btn-primary">Save</button>
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-9 mt-2">
+                                        <button type="submit" class="btn btn-primary btn-block rounded-pill">Save</button>
                                     </div>
                                 </div>
                             </form>
                         </div>
-                        <span class="border-right"> &nbsp;</span>
-                        <div class="d-flex flex-column align-items-center pr-5 pl-5">
-                            <div class="upload-img mb-3">
-                                <img src="./assets/img/item/profile.png" alt="" class="rounded-circle">
-                            </div>
-                            <div class="upload-img">
-                                <button class="btn border">Select image</button>
+
+                        <div class="upload-img col-sm-12 col-md-3 mb-4">
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="mb-3">
+                                    <img src="./assets/img/item/profile.png" alt="..." class="rounded-circle">
+                                </div>
+                                <div>
+                                    <button class="btn border rounded-pill">Select image</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </main>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="./assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>
