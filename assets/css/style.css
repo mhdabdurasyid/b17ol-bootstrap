@@ -31,7 +31,8 @@
     .content-header,
     .link-header,
     .product-review,
-    .col-sm-12 {
+    .col-sm-12,
+    .category-carousel {
         margin-left: 0 !important;
         margin-right: 0 !important;
         padding-left: 0 !important;
@@ -44,7 +45,8 @@
     }
 
     .img-cart,
-    .form-group.row select {
+    .form-group.row select,
+    .category-carousel .card {
         margin-bottom: 16px !important;
     }
 
@@ -62,6 +64,11 @@
 
     .form-my-profile .gender {
         text-align: right !important;
+    }
+
+    .category-img {
+        width: 100px !important;
+        height: 100px !important;
     }
 }
 
@@ -244,4 +251,12 @@ a,
 .sidenav {
     height: calc(100vh - 100px);
     background-color: white;
+}
+
+.category-img {
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
